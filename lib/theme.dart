@@ -1,5 +1,6 @@
 import 'package:analog_clock/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
 // Our light/Primary Theme
@@ -61,7 +62,11 @@ ThemeData darkThemeData(BuildContext context) {
       bodyText1: TextStyle(color: kBodyTextColorDark),
       bodyText2: TextStyle(color: kBodyTextColorDark),
       headline4: TextStyle(color: kTitleTextDarkColor, fontSize: 32),
-      headline1: TextStyle(color: kTitleTextDarkColor, fontSize: 80),
+      headline1: TextStyle(
+        color: kTitleTextDarkColor,
+        fontWeight: FontWeight.w300,
+        fontSize: 80,
+      ),
     ),
   );
 }
