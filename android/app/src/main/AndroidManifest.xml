@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.analog_clock">
    <application
-        android:label="analog_clock"
-        android:icon="@mipmap/ic_launcher">
+        android:label="Analog Clock"
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
