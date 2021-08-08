@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
       padding: EdgeInsets.symmetric(
         horizontal: getProportionateScreenWidth(10),
       ),
-      child: InkWell(
+      child: GestureDetector(
         onTap: () {},
         child: Container(
           width: getProportionateScreenWidth(32),

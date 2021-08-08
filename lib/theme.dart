@@ -1,13 +1,13 @@
 import 'package:analog_clock/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-// import 'package:google_fonts/google_fonts.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 // Our light/Primary Theme
 ThemeData themeData(BuildContext context) {
   return ThemeData(
     appBarTheme: appBarTheme,
-    fontFamily: "GoogleSans",
+    // fontFamily: "GoogleSans",
     primaryColor: kPrimaryColor,
     // colorSchema.secondary replace accentColor
     // accentColor: kAccentLightColor,
@@ -25,18 +25,18 @@ ThemeData themeData(BuildContext context) {
       backgroundColor: kAccentIconLightColor,
     ),
     primaryIconTheme: const IconThemeData(color: kPrimaryIconLightColor),
-    // textTheme: GoogleFonts.latoTextTheme().copyWith(
+    textTheme: GoogleFonts.latoTextTheme().copyWith(
+      bodyText1: const TextStyle(color: kBodyTextColorLight),
+      bodyText2: const TextStyle(color: kBodyTextColorLight),
+      headline4: const TextStyle(color: kTitleTextLightColor, fontSize: 32),
+      headline1: const TextStyle(color: kTitleTextLightColor, fontSize: 80),
+    ),
+    // textTheme: const TextTheme(
     //   bodyText1: TextStyle(color: kBodyTextColorLight),
     //   bodyText2: TextStyle(color: kBodyTextColorLight),
     //   headline4: TextStyle(color: kTitleTextLightColor, fontSize: 32),
     //   headline1: TextStyle(color: kTitleTextLightColor, fontSize: 80),
     // ),
-    textTheme: const TextTheme(
-      bodyText1: TextStyle(color: kBodyTextColorLight),
-      bodyText2: TextStyle(color: kBodyTextColorLight),
-      headline4: TextStyle(color: kTitleTextLightColor, fontSize: 32),
-      headline1: TextStyle(color: kTitleTextLightColor, fontSize: 80),
-    ),
   );
 }
 
@@ -58,15 +58,11 @@ ThemeData darkThemeData(BuildContext context) {
       backgroundColor: kAccentIconDarkColor,
     ),
     primaryIconTheme: const IconThemeData(color: kPrimaryIconDarkColor),
-    textTheme: const TextTheme(
-      bodyText1: TextStyle(color: kBodyTextColorDark),
-      bodyText2: TextStyle(color: kBodyTextColorDark),
-      headline4: TextStyle(color: kTitleTextDarkColor, fontSize: 32),
-      headline1: TextStyle(
-        color: kTitleTextDarkColor,
-        fontWeight: FontWeight.w300,
-        fontSize: 80,
-      ),
+    textTheme: GoogleFonts.latoTextTheme().copyWith(
+      bodyText1: const TextStyle(color: kBodyTextColorDark),
+      bodyText2: const TextStyle(color: kBodyTextColorDark),
+      headline4: const TextStyle(color: kTitleTextDarkColor, fontSize: 32),
+      headline1: const TextStyle(color: kTitleTextDarkColor, fontSize: 80),
     ),
   );
 }

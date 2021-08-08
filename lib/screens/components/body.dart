@@ -1,3 +1,4 @@
+import 'package:analog_clock/screens/components/clock.dart';
 import 'package:analog_clock/screens/components/time_in_hour_and_minute.dart';
 import 'package:flutter/material.dart';
 
@@ -20,6 +21,7 @@ class _BodyState extends State<Body> {
             style: Theme.of(context).textTheme.bodyText2,
           ),
           const TimeInHourAndMinute(),
+          const Clock(),
         ],
       ),
     );

@@ -34,6 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  google_fonts: ^2.1.0
   flutter_svg: ^0.22.0
   provider: ^5.0.0
 
@@ -75,14 +76,14 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: GoogleSans
-      fonts:
-        - asset: assets/fonts/GoogleSans-Medium.ttf
-        - asset: assets/fonts/GoogleSans-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/GoogleSans-Regular.ttf
-          weight: 300
+  # fonts:
+  #   - family: GoogleSans
+  #     fonts:
+  #       - asset: assets/fonts/GoogleSans-Medium.ttf
+  #       - asset: assets/fonts/GoogleSans-Bold.ttf
+  #         weight: 700
+  #       - asset: assets/fonts/GoogleSans-Regular.ttf
+  #         weight: 300
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
